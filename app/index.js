@@ -1,15 +1,10 @@
 const React = require('react');
 const ReactDOM = require('react-dom');
 require('./main.css');
+var App = require('./components/App')
 
-class App extends React.Component {
-    render() {
-        return (
-            <div>
-                Hello World!
-            </div>
-        )
-    }
-}
 
-ReactDOM.render (<App/>, document.getElementById('app'));
+ReactDOM.render (
+    <App/>, 
+    document.getElementById('app')
+);

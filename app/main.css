@@ -1,3 +1,27 @@
 body {
+    /* Use User system fonts that are available. For lightweight purposes */
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
+}
 
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.languages {
+    font-weight: 900;
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+li {
+    cursor: pointer;
+    display: inline-block;
+    pointer-events: auto;
+   
+}
+
+li:not(:last-of-type) {
+    margin-right: 30px;
 }

@@ -6,8 +6,11 @@
   "scripts": {
     "start": "webpack-dev-server --open"
   },
-  "babel": { 
-      "presets":["env", "react"]
+  "babel": {
+    "presets": [
+      "env",
+      "react"
+    ]
   },
   "author": "Rhyan Vargas",
   "license": "ISC",
