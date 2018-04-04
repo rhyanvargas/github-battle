@@ -4,7 +4,8 @@
   "description": "Popular github repositories sorted by  languages",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --open"
+    "start": "webpack-dev-server --open",
+    "prod": "webpack"
   },
   "babel": {
     "presets": [
