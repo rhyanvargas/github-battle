@@ -5,14 +5,19 @@ body {
 
 .container {
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 80vw;
 }
 
+ul,
 .languages {
     font-weight: 900;
     list-style: none;
     padding: 0;
     text-align: center;
+}
+
+.languages li:not(:last-of-type) {
+    margin-right: 30px;
 }
 
 li {
@@ -22,6 +27,34 @@ li {
    
 }
 
-li:not(:last-of-type) {
-    margin-right: 30px;
+.popular-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex: 1 1 100%;
+}
+
+.popular-item {
+    align-items: center; 
+    display: flex;
+    flex:1 1 16.666666666666667%;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+.popular-item:not(:last-of-type) {
+    margin: 2rem 0 ;
+}
+.popular-rank {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+.space-list-items {
+   display: flex;
+   flex-flow: column wrap;
+   align-items: center;
+}
+
+.avatar {
+    border-radius: 50%;
+    max-width: 150px;
 }
