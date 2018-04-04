@@ -1,23 +1,17 @@
 var React = require('react');
 var PropTypes = require('prop-types');
 
-function LanguageItem (props) {
-    return(
-        <li> {props.lang}</li>
-    )
-}
-
 function SelectLanguage (props) {
     var languages = ['All', 'Javascript', 'Ruby', 'Java', 'CSS', 'Python']
     return (
         <ul className="languages">
-            {languages.map((lang) =>
-                <LanguageItem
-                    key={lang} 
-                    onClick= {props.onSelect.bind(null, lang)}
-                    style= {lang === props.selectedLanguage ? {color: '#d0021b'}: null} />
-                )
-            }
+            {languages.map( (lang) => 
+                <li 
+                    key={lang}
+                    onClick={props.onSelect.bind(null, lang)}
+                    style={lang === props.selectedLanguage ? {color: '#d0021b'}: null}
+                >{lang}</li>
+            )}
         </ul>
     )
 }
