@@ -14,7 +14,9 @@ ul {
     padding: 0;
 }
 
-li:not(:last-of-type) {
+li.popular-item:not(:last-of-type),
+.nav li:not(:last-of-type),
+.languages li:not(:last-of-type) {
     margin-right: 30px;
 }
 
