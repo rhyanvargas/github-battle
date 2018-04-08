@@ -60,7 +60,7 @@ class Results extends React.Component {
     }
     componentDidMount() {
         var players = queryString.parse(this.props.location.search);
-        console.log('players' + players);
+        // console.log('players' + players);
 
         api.battle([
             players.playerOneName,
@@ -90,7 +90,7 @@ class Results extends React.Component {
         var loser = this.state.loser;
         var error = this.state.error;
         var loading = this.state.loading;
-        
+
         if (loading === true) {
             return <p>Loading</p>;
         }
