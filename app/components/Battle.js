@@ -151,7 +151,6 @@ class Battle extends React.Component {
                             </button>
                         </PlayerPreview>
                     }
-                    
                 </div>
                 
                 {playerOneImage && playerTwoImage &&
